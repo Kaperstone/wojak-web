@@ -1,0 +1,164 @@
+.notification {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 12px;
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08)
+}
+
+.notification-content {
+    width: 210px;
+    padding: 12px 6px 12px 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word
+}
+
+.notification-content p {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin: 2px 0 0
+}
+
+.notification-buttons {
+    border-left: 1px solid #eee
+}
+
+.notification-buttons button:first-child {
+    border-bottom: 1px solid #eee
+}
+
+.default-position-style-top-left,.default-position-style-top-center,.default-position-style-top-right,.default-position-style-bottom-left,.default-position-style-bottom-center,.default-position-style-bottom-right {
+    position: fixed;
+    max-width: 400px
+}
+
+.default-position-style-top-left {
+    top: 0;
+    left: 0
+}
+
+.default-position-style-top-center {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.default-position-style-top-right {
+    top: 0;
+    right: 0
+}
+
+.default-position-style-bottom-left {
+    bottom: 0;
+    left: 0
+}
+
+.default-position-style-bottom-center {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.default-position-style-bottom-right {
+    bottom: 0;
+    right: 0
+}
+
+.default-notification-style {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 12px;
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    min-height: 0;
+    min-width: 200px;
+    overflow: hidden
+}
+
+.default-notification-style-content {
+    width: 210px;
+    padding: 12px 6px 12px 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word
+}
+
+.default-notification-style-button {
+    display: block;
+    width: 40px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-left: 1px solid #eee;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.default-notification-style-button:hover {
+    background: rgba(0, 0, 0, 0.01)
+}
+
+.default-notification-danger {
+    background: #f3555a;
+    color: #fff
+}
+
+.default-notification-danger .default-notification-style-button {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff
+}
+
+.default-notification-warning {
+    background: #ffb900;
+    color: #000
+}
+
+.default-notification-warning .default-notification-style-button {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    color: #000
+}
+
+.default-notification-success {
+    background: #22ce6c;
+    color: #fff
+}
+
+.default-notification-info {
+    background: #57a2e9;
+    color: #fff
+}
+
+.default-notification-success .default-notification-style-button {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff
+}

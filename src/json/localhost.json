@@ -1,0 +1,791 @@
+{
+    "chain": {
+        "name": "Localhost",
+        "currency": "SEPTIM",
+        "id": 1337,
+        "blockTime": 1,
+        "defender": "",
+        "owner": {
+            "address": "0xc1269f367e41e49B17D1a26e63B0c6c2cfD8586f"
+        }
+    },
+    "contracts": {
+        "token": {
+            "address": "0x745438Fe8eAd28Bd77a57e5ee46C00d5f9aA31f6",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function mint(address,uint) public",
+                "function burn(uint) public",
+                "function triggerTax() public",
+                "function disable() public view returns (bool)",
+                "function totalBurnt() public view returns (uint)"
+            ]
+        },
+        "stake": {
+            "address": "0xe291F6A227936cB8B3c81501DAB93A76033F001F",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function disabled() public view returns (bool)",
+                "function wjk() public view returns (address)",
+                "function chad() public view returns (address)",
+                "function keeper() public view returns (address)",
+                "function index() public view returns (uint)",
+                "function stake(uint) public returns (uint)",
+                "function unstake(uint) public returns(uint)",
+                "function boomersForMe(uint) public view returns (uint)",
+                "function balanceOfUnderlying(uint) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressBonds(address) public",
+                "function setAddressKeeper(address) public",
+                "function triggerStaking() public"
+            ]
+        },
+        "zoomer": {
+            "address": "0x84e749E2228AeF3AAC92Af33389CED9540263fcB",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function disabled() public view returns (bool)",
+                "function wjk() public view returns (address)",
+                "function chad() public view returns (address)",
+                "function keeper() public view returns (address)",
+                "function index() public view returns (uint)",
+                "function stake(uint) public returns (uint)",
+                "function unstake(uint) public returns(uint)",
+                "function boomersForMe(uint) public view returns (uint)",
+                "function balanceOfUnderlying(uint) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressBonds(address) public",
+                "function setAddressKeeper(address) public",
+                "function triggerStaking() public"
+            ]
+        },
+        "bonds": {
+            "address": "0x9C4CA0671532dbF609815E174F1373b9B6764312",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function keeper() public view returns (address)",
+                "function usdcCollected() public view returns (uint)",
+                "function bondPrice() public view returns (uint)",
+                "function bonded() public view returns (uint)",
+                "function bond(uint) public returns (uint)",
+                "function claimBond() public returns (uint)",
+                "function timeleft(address) public view returns (uint)",
+                "function updatePrice() public",
+                "function setAddressToken(address) public",
+                "function setAddressKeeper(address) public",
+                "function setAddressStaking(address) public"
+            ]
+        },
+        "treasury": {
+            "address": "0xdE0837f08914d1ecEFD7db2cf8047eB53Bc9Dedc",
+            "abi": [
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function getRoleMember(bytes32,uint) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+
+                "function wjk() public view returns (address)",
+                "function chad() public view returns (address)",
+                "function keeper() public view returns (address)",
+                
+                "function statsSentToChad() public view returns (uint)",
+                "function statsBurntWJK() public view returns (uint)",
+                "function token(address) public view returns (address,uint,bool)",
+
+                "function addStrategy(address,address) public",
+                "function disableStrategy(address) public",
+                "function forceWithdraw(address) public",
+                "function enableStrategy(address) public",
+                "function changeStrategy(address,address) public",
+
+                "function deposit(address,uint) public",
+                "function fillBonds() public",
+
+                "function setAddressToken(address) public",
+                "function setAddressBonds(address) public",
+                "function setAddressKeeper(address) public",
+
+                "function enterMarket(address) public",
+                "function exitAndBalanceMarkets(address) public",
+                "function exitMarket(address) public"
+            ]
+        },
+        "keeper": {
+            "address": "0x00031C3D45880d7be608930a403cd822447038e9",
+            "abi": [
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function lastKeep() public view returns (uint)",
+                "function totalUpkeeps() public view returns (uint)",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function chad() public view returns (address)",
+                "function treasury() public view returns (address)",
+                "function stakeLocker() public view returns (address)",
+                "function USDC() public view returns (address)",
+                "function SWAP_ROUTER() public view returns (address)",
+                "function checkUpkeep(bytes calldata checkData) public view returns(bool,bytes memory)",
+                "function performUpkeep(bytes calldata performData) external",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function setAddressBonds(address) public",
+                "function setAddressTreasury(address) public",
+                "function forLiquidity() public view returns (uint)",
+                "function forTokens(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function lastDist() public view returns (uint)",
+                "function dists() public view returns (uint)"
+            ]
+        },
+        "manager": {
+            "address": "0x7780538643e71AF6C71bBaF874f778aFd83E49f6",
+            "abi": [
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function setAddressBonds(address) public",
+                "function setAddressKeeper(address) public",
+                "function setAddressLocker(address) public",
+                "function setAddressTreasury(address) public",
+                "function setAddressZoomer(address) public",
+                "function setAddressBooSoy(address) public",
+                "function setAddressCreditSoy(address) public",
+                "function setAddressScreamSoy(address) public",
+                "function setAddressTarotSoy(address) public",
+                "function setAddressUsdcSoy(address) public",
+                "function setAddressBifiSoy(address) public",
+                "function setAddressCrvSoy(address) public",
+
+                "function wojak() public view returns (address)",
+                "function stake() public view returns (address)",
+                "function bonds() public view returns (address)",
+                "function keeper() public view returns (address)",
+                "function locker() public view returns (address)",
+                "function treasury() public view returns (address)",
+                "function zoomer() public view returns (address)",
+                "function boosoy() public view returns (address)",
+                "function creditsoy() public view returns (address)",
+                "function screamsoy() public view returns (address)",
+                "function tarotsoy() public view returns (address)",
+                "function usdcsoy() public view returns (address)",
+
+                "function updateKeeperContracts() public",
+                "function updateContract() public"
+            ] 
+        },
+        "stakelocker": {
+            "address": "0x0455290d6aC4955889F27Ff74EdACe1573Be2962",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function getRoleMember(bytes32,uint) public view returns (address)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                
+                "function statsBurntWJK() public view returns (uint)",
+
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function USDC() public view returns (address)",
+                "function disabled() public view returns (bool)",
+                "function lock() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function token(address) public view returns (address, uint, uint, bool)",
+
+                "function addStrategy(address,address) public",
+                "function disableStrategy(address) public",
+                "function enableStrategy(address) public",
+                "function changeStrategy(address,address) public",
+
+                "function depositToBank(address,uint) public",
+                "function enter(uint) public returns (address[] memory tokens,uint[] memory amounts,uint8[] memory decimals)",
+                "function leave(uint) public returns (address[] memory tokens,uint[] memory amounts,uint8[] memory decimals)",
+                "function leaveAdmin(uint) public returns (address[] memory tokens,uint[] memory amounts,uint8[] memory decimals)",
+                "function withdrawRewards() public returns (address[] memory,uint[] memory,uint8[] memory)",
+
+                "function checkRewards(address _locker, address rewardToken) public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function triggerLocker() public"
+            ]
+        },
+        "boosoy": {
+            "name": "boosoy",
+            "token": "boo",
+            "address": "0x8F04b4652F7e8b79F38cE8dE08eEf0FE745476c6",
+            "farm": true,
+            "disabled": false,
+            "ib": "0xa48d959AE2E88f1dAA7D5F611E01908106dE7598",
+            "usdc": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function booBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Spookyswap",
+            "image": "/static/images/boo.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "creditsoy": {
+            "name": "creditsoy",
+            "token": "credit",
+            "address": "0x2a3EcF313a26a65B4d88dac36ef687A992CC87E9",
+            "farm": true,
+            "disabled": false,
+            "ib": "0xd9e28749e80D867d5d14217416BFf0e668C10645",
+            "usdc": "0x77128DFdD0ac859B33F44050c6fa272F34872B5E",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function creditBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Creditum",
+            "image": "/static/images/credit.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "screamsoy": {
+            "name": "screamsoy",
+            "token": "scream",
+            "address": "0x07D374f163be30377D226b40bfd989fF42615237",
+            "farm": true,
+            "disabled": false,
+            "ib": "0xe3D17C7e840ec140a7A51ACA351a482231760824",
+            "usdc": "0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function screamBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Scream lending",
+            "image": "/static/images/scream.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "tarotsoy": {
+            "name": "tarotsoy",
+            "token": "tarot",
+            "address": "0x06735E4287bb868CE97bC13f8b6EAA972E71B013",
+            "farm": true,
+            "disabled": false,
+            "ib": "0x74D1D2A851e339B8cB953716445Be7E8aBdf92F4",
+            "usdc": "0xC5e2B037D30a390e62180970B3aa4E91868764cD",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function tarotBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Tarot leveraged yield farm",
+            "image": "/static/images/tarot.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "usdcsoy": {
+            "name": "usdcsoy",
+            "token": "usdc",
+            "address": "0x7A643E8e3dF8545ba7ee8Bdb0629799E26a970fa",
+            "farm": true,
+            "disabled": false,
+            "ib": "0xE45Ac34E528907d0A0239ab5Db507688070B20bf",
+            "usdc": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function usdcBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Scream lending",
+            "image": "/static/images/usdc.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "bifisoy": {
+            "name": "bifisoy",
+            "token": "bifi",
+            "address": "0x55f84F0395180A83AC4C4a197F020433834187Bc",
+            "farm": true,
+            "disabled": false,
+            "ib": "0x0467c22fB5aF07eBb14C851C75bFf4180674Ed64",
+            "usdc": "0xd6070ae98b8069de6B494332d1A1a81B6179D960",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function bifiBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Scream lending",
+            "image": "/static/images/bifi.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        },
+        "crvsoy": {
+            "name": "crvsoy",
+            "token": "crv",
+            "address": "0x90e4e4890D3ec2488Dc68C03D9295CB45b01377C",
+            "farm": true,
+            "disabled": false,
+            "ib": "0x820BdA1786AFA19DA6B92d6AC603574962337326",
+            "usdc": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function hasRole(bytes32,address) public view returns (bool)",
+                "function getRoleMemberCount(bytes32) public view returns (uint)",
+                "function grantRole(bytes32,address) public",
+                "function revokeRole(bytes32,address) public",
+                "function wjk() public view returns (address)",
+                "function swjk() public view returns (address)",
+                "function LTOKEN() public view returns (address)",
+                "function ITOKEN() public view returns (address)",
+                "function lock() public view returns (bool)",
+                "function disabled() public view returns (bool)",
+                "function epochIndex() public view returns (uint)",
+                "function timeDifference(address) public view returns (uint)",
+                "function crvBalance() public view returns (uint)",
+                "function deposit(uint) public",
+                "function withdraw(uint) public",
+                "function withdrawAdmin(uint) public",
+                "function withdrawRewards() public returns (uint)",
+                "function checkRewards(address) public view returns (uint)",
+                "function distributeRewards() public",
+                "function setAddressToken(address) public",
+                "function setAddressStaking(address) public",
+                "function disableFarm() public"
+            ],
+            "platform": "Scream lending",
+            "image": "/static/images/crv.webp",
+            "interest": -1,
+            "wjkInterest": -1
+        }
+    },
+    "swap": {
+        "router": {
+            "address": "0xF491e7B69E4244ad4002BC14e878a34207E38c29",
+            "abi": [
+                "function swapExactETHForTokens(uint,address[] calldata,address,uint) public payable returns (uint[] memory)",
+                "function addLiquidity(address,address,uint,uint,uint,uint,address,uint) public returns (uint,uint,uint)"
+            ]
+        },
+        "factory": {
+            "address": "0x152eE697f2E276fA89E96742e9bB9aB1F2E61bE3",
+            "abi": [
+                "function createPair(address,address) public returns (address)",
+                "function getPair(address,address) public view returns (address)"
+            ]
+        },
+        "pair": {
+            "address": "0x5201f3BF23C03991a82fA4b691ABA589C20d49cf",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "usdcftmpair": {
+            "address": "0x2b4c76d0dc16be1c31d4c1dc53bf9b45987fc75c",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "booftmpair": {
+            "address": "0xec7178f4c41f346b2721907f5cf7628e388a7a58",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "creditftmpair": {
+            "address": "0x06f3cb227781a836fefaea7e686bdc857e80eaa7",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "screamftmpair": {
+            "address": "0x30872e4fc4edbfd7a352bfc2463eb4fae9c09086",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "tarotftmpair": {
+            "address": "0x11d90ea9d16e1ee5879b299a819f6d618816d70f",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "crvftmpair": {
+            "address": "0xb471ac6ef617e952b84c6a9ff5de65a9da96c93b",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        },
+        "bififtmpair": {
+            "address": "0x1656728af3a14e1319f030dc147fabf6f627059e",
+            "abi": [
+                "function getReserves() external view returns (uint112,uint112,uint32)"
+            ]
+        }
+    },
+    "tokens": {
+        "wftm": {
+            "decimals": 18,
+            "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "usdc": {
+            "decimals": 6,
+            "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "scusdc": {
+            "decimals": 8,
+            "address": "0xE45Ac34E528907d0A0239ab5Db507688070B20bf",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function balanceOfUnderlying(address) public view returns (uint)"
+            ]
+        },
+        "bifi": {
+            "decimals": 18,
+            "address": "0xd6070ae98b8069de6B494332d1A1a81B6179D960",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "scbifi": {
+            "decimals": 8,
+            "address": "0x0467c22fB5aF07eBb14C851C75bFf4180674Ed64",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function balanceOfUnderlying(address) public view returns (uint)"
+            ]
+        },
+        "crv": {
+            "decimals": 18,
+            "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "sccrv": {
+            "decimals": 8,
+            "address": "0x820BdA1786AFA19DA6B92d6AC603574962337326",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function balanceOfUnderlying(address) public view returns (uint)"
+            ]
+        },
+        "xboo": {
+            "decimals": 18,
+            "address": "0xa48d959AE2E88f1dAA7D5F611E01908106dE7598",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function BOOForxBOO(uint) public view returns (uint)",
+                "function BOOBalance(address) public view returns (uint)"
+            ]
+        },
+        "boo": {
+            "decimals": 18,
+            "address": "0x841FAD6EAe12c286d1Fd18d1d525DFfA75C7EFFE",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "xcredit": {
+            "decimals": 18,
+            "address": "0xd9e28749e80D867d5d14217416BFf0e668C10645",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)"
+            ]
+        },
+        "credit": {
+            "decimals": 18,
+            "address": "0x77128DFdD0ac859B33F44050c6fa272F34872B5E",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "xscream": {
+            "decimals": 18,
+            "address": "0xe3D17C7e840ec140a7A51ACA351a482231760824",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)"
+            ]
+        },
+        "scream": {
+            "decimals": 18,
+            "address": "0xe0654C8e6fd4D733349ac7E09f6f23DA256bF475",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function transfer(address,uint) public returns (bool)"
+            ]
+        },
+        "xtarot": {
+            "decimals": 18,
+            "address": "0x74D1D2A851e339B8cB953716445Be7E8aBdf92F4",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)",
+                "function underlyingBalanceForAccount(address) public view returns (uint)",
+                "function underlyingValuedAsShare(uint) public view returns (uint)"
+            ]
+        },
+        "tarot": {
+            "decimals": 18,
+            "address": "0xC5e2B037D30a390e62180970B3aa4E91868764cD",
+            "abi": [
+                "function balanceOf(address) view returns (uint)",
+                "function allowance(address,address) public view returns (uint)",
+                "function totalSupply() public view returns (uint)",
+                "function approve(address,uint) public returns (bool)",
+                "function decimals() public view returns (uint)"
+            ]
+        }
+    }
+}

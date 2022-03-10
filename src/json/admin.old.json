@@ -1,0 +1,298 @@
+{
+    "contracts": [
+        {
+            "name": "token",
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.stake"
+                ],
+                "result": []
+            },
+            "functions": []
+        },
+        {
+            "name": "stake",
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.keeper"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressBonds",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "bonds",
+                            "equal": "chad",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressKeeper",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "keeper",
+                            "equal": "keeper",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "triggerStaking",
+                    "type": "button"
+                }
+            ]
+        },
+        {
+            "name": "bonds",
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.keeper"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressKeeper",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "keeper",
+                            "equal": "keeper",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressStaking",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stake",
+                            "equal": "swjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "treasury",
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.keeper"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressBonds",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "bonds",
+                            "equal": "chad",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "keeper",
+            "roles": {
+                "keccak256": "0x86b309ff057c1dbc796d9470d76bc906c80d2a3ff6bd5a2e447d1e7112884379",
+                "target": [
+                    "contracts.stake",
+                    "contracts.scream-usdc",
+                    "contracts.stakelocker"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressStaking",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stake",
+                            "equal": "swjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressBonds",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "bonds",
+                            "equal": "chad",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressTreasury",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "treasury",
+                            "equal": "treasury",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "stakelocker",
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.keeper"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressStaking",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stake",
+                            "equal": "swjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "triggerLocker",
+                    "type": "button"
+                }
+            ]
+        },
+        {
+            "name": "scream-usdc",
+            "show": true,
+            "roles": {
+                "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                "target": [
+                    "contracts.keeper"
+                ],
+                "result": []
+            },
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressStaking",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stake",
+                            "equal": "swjk",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "distributeRewards",
+                    "type": "button"
+                },
+                {
+                    "name": "disableFarm",
+                    "type": "button"
+                }
+            ]
+        }
+    ]
+}

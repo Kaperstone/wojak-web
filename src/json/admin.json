@@ -1,0 +1,416 @@
+{
+    "contracts": [
+        {
+            "name": "manager",
+            "roles": [],
+            "functions": [
+                {
+                    "name": "setAddressToken",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "token",
+                            "equal": "wojak",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressStaking",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stake",
+                            "equal": "stake",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressBonds",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "bonds",
+                            "equal": "bonds",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressKeeper",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "keeper",
+                            "equal": "keeper",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressLocker",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "stakelocker",
+                            "equal": "locker",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressTreasury",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "treasury",
+                            "equal": "treasury",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressZoomer",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "zoomer",
+                            "equal": "zoomer",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressBooSoy",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "boosoy",
+                            "equal": "boosoy",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressCreditSoy",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "creditsoy",
+                            "equal": "creditsoy",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressScreamSoy",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "screamsoy",
+                            "equal": "screamsoy",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressTarotSoy",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "tarotsoy",
+                            "equal": "tarotsoy",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                },
+                {
+                    "name": "setAddressUsdcSoy",
+                    "type": "input",
+                    "inputs": [
+                        {
+                            "default": "usdcsoy",
+                            "equal": "usdcsoy",
+                            "placeholder": "address",
+                            "type": "should-equal-this"
+                        }
+                    ]
+                }
+            ]
+        },{
+            "name": "token",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                },
+                {
+                    "name": "CONTRACT_ROLE",
+                    "keccak256": "0x364d3d7565c7a8300c96fd53e065d19b65848d7b23b3191adcd55621c744223c",
+                    "target": [
+                        "contracts.stake",
+                        "contracts.zoomer"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },{
+            "name": "stake",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "bonds",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "keeper",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                },
+                {
+                    "name": "TARGETS",
+                    "keccak256": "0x86b309ff057c1dbc796d9470d76bc906c80d2a3ff6bd5a2e447d1e7112884379",
+                    "target": [
+                        "contracts.stake",
+                        "contracts.zoomer",
+                        "contracts.stakelocker",
+                        "contracts.boosoy",
+                        "contracts.creditsoy",
+                        "contracts.screamsoy",
+                        "contracts.tarotsoy",
+                        "contracts.usdcsoy",
+                        "contracts.bifisoy",
+                        "contracts.crvsoy"
+                    ],
+                    "result": []
+                },
+                {
+                    "name": "TOKENS",
+                    "keccak256": "0x1d0c4a6d5955c15210d504b24311f07967d735ab1b30eb7918850991b51c3ce6",
+                    "target": [
+                        "tokens.boo",
+                        "tokens.credit",
+                        "tokens.scream",
+                        "tokens.tarot",
+                        "tokens.usdc",
+                        "tokens.bifi",
+                        "tokens.crv"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "stakelocker",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                },
+                {
+                    "name": "TOKENS",
+                    "keccak256": "0x1d0c4a6d5955c15210d504b24311f07967d735ab1b30eb7918850991b51c3ce6",
+                    "target": [
+                        "tokens.boo",
+                        "tokens.credit",
+                        "tokens.scream",
+                        "tokens.tarot",
+                        "tokens.usdc",
+                        "tokens.bifi",
+                        "tokens.crv"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "treasury",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                },
+                {
+                    "name": "TOKENS",
+                    "keccak256": "0x1d0c4a6d5955c15210d504b24311f07967d735ab1b30eb7918850991b51c3ce6",
+                    "target": [
+                        "tokens.boo",
+                        "tokens.credit",
+                        "tokens.scream",
+                        "tokens.tarot",
+                        "tokens.usdc",
+                        "tokens.bifi",
+                        "tokens.crv"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "zoomer",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "boosoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "creditsoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "screamsoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "tarotsoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "usdcsoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "bifisoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        },
+        {
+            "name": "crvsoy",
+            "roles": [
+                {
+                    "name": "DEFAULT_ADMIN_ROLE",
+                    "keccak256": "0x0000000000000000000000000000000000000000000000000000000000000000",
+                    "target": [
+                        "contracts.manager"
+                    ],
+                    "result": []
+                }
+            ],
+            "functions": []
+        }
+    ]
+}

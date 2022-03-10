@@ -1,0 +1,16 @@
+20% of supply 5,000 is 1,000
+
+20% of 
+    user1 100 = 20
+    user2 20 = 4
+    user3 1 = 0.2
+    user4 50 = 10
+    user5 99 = 19.8
+    user6 2230 = 446
+    user7 2500 = 500
+    is still 1000
+
+
+Lets say user7 doesn't stake, then the inflation is 500
+
+In other words, individual guarnteed 20% per person, is better than global 20%
